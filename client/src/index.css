@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-inter antialiased bg-background text-foreground;
+
+  /* Custom date picker styling */
+  .react-datepicker {
+    @apply font-inter;
+  }
+
+  .react-datepicker__header {
+    @apply font-inter;
+  }
+
+  .react-datepicker__day-name, 
+  .react-datepicker__day, 
+  .react-datepicker__time-name,
+  .react-datepicker__current-month,
+  .react-datepicker-time__header,
+  .react-datepicker__month-text,
+  .react-datepicker__quarter-text,
+  .react-datepicker__year-text {
+    @apply font-inter;
+  }
+
+  }
+}
